@@ -39,6 +39,12 @@ if (!is_null($events['events'])) {
 					'text' => 'กรุณาระบุประเภทสินค้า'
 				];
 			}
+			elseif ($text == 'เช็ค') {
+				$messages = [
+					'type' => 'text',
+					'text' => 'กรุณาระบุรหัสสินค้า'
+				];
+			}
 
 			}
 			// Make a POST Request to Messaging API to reply to sender
