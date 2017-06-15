@@ -48,31 +48,13 @@ if (!is_null($events['events'])) {
 
 			elseif ($text == 'button') {
 				$message=[
-					"type": "template",
-  "altText": "this is a buttons template",
-  "template": {
-      "type": "buttons",
-      "thumbnailImageUrl": "http://www.van-huynh.com/img/about/1.jpg",
-      "title": "Menu",
-      "text": "Please select",
-      "actions": [
-          {
-            "type": "postback",
-            "label": "Buy",
-            "data": "action=buy&itemid=123"
-          },
-          {
-            "type": "postback",
-            "label": "Add to cart",
-            "data": "action=add&itemid=123"
-          },
-          {
-            "type": "uri",
-            "label": "View detail",
-            "uri": "http://google.com"
-          }
-      ]
-  }
+					'type'=> 'template',
+		  			'altText'=> 'this is a buttons template',
+		  			'template'=> {
+		      	'type'=> 'buttons',
+		      	'thumbnailImageUrl'=> 'http://www.van-huynh.com/img/about/1.jpg',
+		      	'title'=> "Menu",
+		      	'text'=> 'Please select'
 				];
 			}
 
