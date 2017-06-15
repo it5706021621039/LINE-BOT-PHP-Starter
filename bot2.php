@@ -30,15 +30,15 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 			// Get replyToken
+			$replyToken = $event['replyToken'];
+
+			// Build message to reply back
 			if ($text=='Hello') {
 				$messages = [
 					'type' => 'text',
 					'text' => $text
 				];
 			}
-			$replyToken = $event['replyToken'];
-
-			// Build message to reply back
 
 			}
 			// Make a POST Request to Messaging API to reply to sender
