@@ -20,9 +20,31 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'image') {
 			$replyToken = $event['replyToken'];
 			$messages = [
-				'type'=> 'image',
-    		'originalContentUrl'=> 'https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg',
-    		'previewImageUrl'=> 'https://upload.wikimedia.org/wikipedia/commons/b/b4/JPEG_example_JPG_RIP_100.jpg'
+				'type'=> 'template',
+  'altText'=> 'this is a buttons template',
+  'template'=>{
+      'type'=> 'buttons',
+      'thumbnailImageUrl'=> 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/275px-A_small_cup_of_coffee.JPG',
+      'title'=> 'Menu',
+      'text'=> 'Please select',
+      'actions'=> [
+          {
+            'type'=> 'postback',
+            'label'=> 'Buy',
+            'data'=> 'action=buy&itemid=123'
+          },
+          {
+            'type'=> 'postback',
+            'label'=> 'Add to cart',
+            'data'=> 'action=add&itemid=123'
+          },
+          {
+            'type'=> 'uri',
+            'label'=> 'View detail',
+            'uri'=> 'http://google.com'
+          }
+      ]
+  	}
 			];
 		}
 		// Reply only when message sent is in 'text' format
