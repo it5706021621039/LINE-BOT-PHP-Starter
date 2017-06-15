@@ -20,8 +20,9 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'image') {
 			$replyToken = $event['replyToken'];
 			$messages = [
-      	'type': 'buttons',
-	      'text'=> 'Please select'
+				'type' => 'sticker',
+				'packageId'=> '1',
+  			'stickerId'=> '2'
 			];
 		}
 		// Reply only when message sent is in 'text' format
