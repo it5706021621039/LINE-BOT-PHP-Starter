@@ -11,7 +11,7 @@ if (!is_null($events['events'])) {
 	foreach ($events['events'] as $event) {
     if ($event['type'] == 'message'&& $event['message']['type'] == 'text') {
       $replyToken = $event['replyToken'];
-      $pre = "https://example.com/preview.jpg"
+      $pre = $event['message']['https://example.com/preview.jpg'];
       $img = [
         'type' => 'image',
 				'text' => $pre
@@ -34,7 +34,7 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
-			$text = $event['message']['text'];
+			$text = $event['message']['KTW'];
 
 			// Get replyToken
 			$replyToken = $event['replyToken'];
