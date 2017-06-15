@@ -20,31 +20,8 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'image') {
 			$replyToken = $event['replyToken'];
 			$messages = [
-				'type'=> 'template',
-  			'altText'=> 'this is a buttons template',
-  			'template'=> {
       	'type': 'buttons',
-	      'thumbnailImageUrl'=> 'http://www.born2bemarketing.com/wp-content/uploads/2016/11/a8471bac-30ed-4ca6-b38b-0d9f1d0222cb-1930-000002e641cc5565_tmp-1.jpg',
-	      'title'=> 'Menu',
-	      'text'=> 'Please select',
-	      'actions'=> [
-	          {
-	            'type'=> 'postback',
-	            'label'=> 'Buy',
-	            'data'=> 'action=buy&itemid=123'
-	          },
-	          {
-	            'type'=> 'postback',
-	            'label'=> 'Add to cart',
-	            'data'=> 'action=add&itemid=123'
-	          },
-	          {
-	            'type'=> 'uri',
-	            'label'=> 'View detail',
-	            'uri'=> 'http://example.com/page/123'
-	          }
-	      ]
-	  	}
+	      'text'=> 'Please select'
 			];
 		}
 		// Reply only when message sent is in 'text' format
