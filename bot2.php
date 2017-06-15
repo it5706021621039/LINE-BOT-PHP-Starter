@@ -71,4 +71,4 @@ if (!is_null($events['events'])) {
 
 	}
 }
-echo "Can do";
+echo "Can";
