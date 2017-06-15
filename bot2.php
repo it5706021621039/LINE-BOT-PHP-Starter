@@ -20,9 +20,9 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'image') {
 			$replyToken = $event['replyToken'];
 			$messages = [
-				'type' => 'sticker',
-				'packageId'=> '1',
-  			'stickerId'=> '2'
+				'type': 'image',
+    		'originalContentUrl': "https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg",
+    		'previewImageUrl': "https://upload.wikimedia.org/wikipedia/commons/b/b4/JPEG_example_JPG_RIP_100.jpg"
 			];
 		}
 		// Reply only when message sent is in 'text' format
