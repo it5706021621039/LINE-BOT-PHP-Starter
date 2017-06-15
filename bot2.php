@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
   			'altText'=> 'this is a buttons template',
   			'template'=> {
       	'type': 'buttons',
-	      'thumbnailImageUrl'=> 'https://example.com/bot/images/image.jpg',
+	      'thumbnailImageUrl'=> 'http://www.born2bemarketing.com/wp-content/uploads/2016/11/a8471bac-30ed-4ca6-b38b-0d9f1d0222cb-1930-000002e641cc5565_tmp-1.jpg',
 	      'title'=> 'Menu',
 	      'text'=> 'Please select',
 	      'actions'=> [
