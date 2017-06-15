@@ -9,7 +9,7 @@ $events = json_decode($content, true);
 if (!is_null($events['events'])) {
 	// Loop through each event
 	foreach ($events['events'] as $event) {
-    if ($event['type'] == 'message'&& $event['message']['type'] == 'text') {
+    if ($event['type'] == 'message'&& $event['message']['type'] == 'image') {
       $replyToken = $event['replyToken'];
       $pre = $event['message']['https://example.com/preview.jpg'];
       $img = [
