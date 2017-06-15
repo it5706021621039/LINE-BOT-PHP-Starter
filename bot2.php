@@ -33,10 +33,10 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			if ($text=='Hello') {
+			if ($text=='ค้นหา') {
 				$messages = [
 					'type' => 'text',
-					'text' => $text
+					'text' => 'กรุณาระบุประเภทสินค้า'
 				];
 			}
 
