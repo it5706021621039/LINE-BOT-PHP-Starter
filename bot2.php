@@ -20,28 +20,28 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'image') {
 			$replyToken = $event['replyToken'];
 			$messages = [
-				"type"=> "template",
-  "altText"=> "this is a buttons template",
-  "template"=>{
-      "type"=> "buttons",
-      "thumbnailImageUrl"=> "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/275px-A_small_cup_of_coffee.JPG",
-      "title"=> "Menu",
-      "text"=> "Please select",
-      "actions"=> [
+				'type'=> 'template',
+  'altText'=> 'this is a buttons template',
+  'template'=>{
+      'type'=> 'buttons',
+      'thumbnailImageUrl'=> 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/275px-A_small_cup_of_coffee.JPG',
+      'title'=> 'Menu',
+      'text'=> 'Please select',
+      'actions'=> [
           {
-            "type"=> "postback",
-            "label"=> "Buy",
-            "data"=> "action=buy&itemid=123"
+            'type'=> 'postback',
+            'label'=> 'Buy',
+            'data'=> 'action=buy&itemid=123'
           },
           {
-            "type"=> "postback",
-            "label"=> "Add to cart",
-            "data"=> "action=add&itemid=123"
+            'type'=> 'postback',
+            'label'=> 'Add to cart',
+            'data'=> 'action=add&itemid=123'
           },
           {
-            "type"=> "uri",
-            "label"=> "View detail",
-            "uri"=> "http://example.com/page/123"
+            'type'=> 'uri',
+            'label'=> 'View detail',
+            'uri'=> 'http://example.com/page/123'
           }
       ]
   	}
