@@ -51,12 +51,12 @@ if (!is_null($events['events'])) {
 					'type'=> 'template',
 		  			'altText'=> 'this is a buttons template',
 
-		  			'template' {
+		  			'template'(
 		      	'type'=> 'buttons',
 		      	'thumbnailImageUrl'=> 'http://www.van-huynh.com/img/about/1.jpg',
 		      	'title'=> "Menu",
 		      	'text'=> 'Please select'
-					}
+					)
 				];
 			}
 
