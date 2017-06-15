@@ -34,7 +34,7 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			if ($text=='ค้นหา') {
-				//$messages = [
+				$messages = [
 					//'type' => 'text',
 					//'text' => 'กรุณาระบุประเภทสินค้า'
 					$columns = array();
@@ -50,7 +50,7 @@ if (!is_null($events['events'])) {
 					$carousel = new \LINE\LINEBot\MessageBuilder\TemplateBuilder\CarouselTemplateBuilder($columns);
 					$outputText = new \LINE\LINEBot\MessageBuilder\TemplateMessageBuilder("Carousel Demo", $carousel);
 
-			//	];
+			];
 			}
 			elseif ($text == 'เช็ค') {
 				$messages = [
