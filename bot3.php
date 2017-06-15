@@ -124,6 +124,7 @@ if (!is_null($events['events'])) {
             default:
                 $this->echoBack($replyToken, $text);
                 break;
+              }
 
 
 			}
