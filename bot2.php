@@ -47,13 +47,14 @@ if (!is_null($events['events'])) {
 				];
 			}
 			elseif ($text == 'แน่ใจ') {
-				$message = [
+				$message1 = [
 					'type'=> 'template',
 				  'altText'=> 'this is a confirm template',
 				  'template'=> {
 				      'type'=> 'confirm',
-				      'text'=> 'Are you sure?',
-				      'actions'=> [
+				      'text'=> 'Are you sure?'];
+				$message2=[
+				      ',actions'=> [
 				          {
 				            'type'=> 'message',
 				            'label'=>'Yes',
@@ -65,8 +66,9 @@ if (!is_null($events['events'])) {
 				            'text'=> 'no'
 				          }
 				      ]
+						];
+					$messages=[$message1+$message2];
 				  }
-				];
 			}
 			else {
 				$messages = [
