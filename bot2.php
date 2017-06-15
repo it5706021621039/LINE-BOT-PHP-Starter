@@ -47,6 +47,13 @@ if (!is_null($events['events'])) {
 				];
 			}
 
+			else {
+				$messages = [
+					'type' => 'text',
+					'text' => 'กรุณาตรวจสอบคำสั่ง โง่จริงๆ!!!'
+			];
+			}
+
 
 			}
 			// Make a POST Request to Messaging API to reply to sender
