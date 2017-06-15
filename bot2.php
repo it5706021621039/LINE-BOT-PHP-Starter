@@ -39,6 +39,7 @@ if (!is_null($events['events'])) {
 					'text' => 'กรุณาระบุประเภทสินค้า'
 			];
 			}
+
 			elseif ($text == 'เช็ค') {
 				$messages = [
 					'type' => 'text',
@@ -46,14 +47,13 @@ if (!is_null($events['events'])) {
 				];
 			}
 
-			
 
 			}
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$message],
+				'messages' => [$messages],
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
