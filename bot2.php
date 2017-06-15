@@ -55,6 +55,7 @@ if (!is_null($events['events'])) {
 		      	'thumbnailImageUrl'=> 'http://www.van-huynh.com/img/about/1.jpg',
 		      	'title'=> "Menu",
 		      	'text'=> 'Please select'
+					}
 				];
 			}
 
