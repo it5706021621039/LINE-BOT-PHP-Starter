@@ -53,9 +53,10 @@ if (!is_null($events['events'])) {
 				];
 			}
 			elseif ($text=='9500nb'|| $text=='9500NB'||$text == 'M011-9500NB'||$text == 'm011-9500nb') {
-				$message=[
+				$messages=[
 					'type'=>'text',
-					'text'=>'เจียร์ไฟฟ้า4รุ่นใหม่ฉนวน2ชั้น'
+					'text'=>'เจียร์ไฟฟ้า4" รุ่นใหม่ ฉนวน2ชั้น',
+					'text'=>'แบรนด์ MAKITA'
 				];
 			}
 
