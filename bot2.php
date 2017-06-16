@@ -55,7 +55,7 @@ if (!is_null($events['events'])) {
 			elseif ($text=='9500nb'|| $text=='9500NB'||$text == 'M011-9500NB'||$text == 'm011-9500nb') {
 				$messages=[
 					'type'=>'text',
-					'text'=>'เจียร์ไฟฟ้า 4" รุ่นใหม่ ฉนวน2ชั้น \n แบรนด์ MAKITA \n สต็อก '
+					'text'=>'เจียร์ไฟฟ้า 4" รุ่นใหม่ ฉนวน2ชั้น  แบรนด์ MAKITA สต็อก <br> บางบอน '
 				];
 				$messages2=[
 					'type'=> 'image',
