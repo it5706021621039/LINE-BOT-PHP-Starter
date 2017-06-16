@@ -112,6 +112,7 @@ class SendTemplateTest extends \PHPUnit_Framework_TestCase
                 )
             )
         );
+				
         $this->assertEquals(200, $res->getHTTPStatus());
         $this->assertTrue($res->isSucceeded());
         $this->assertEquals(200, $res->getJSONDecodedBody()['status']);
