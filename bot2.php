@@ -46,34 +46,16 @@ if (!is_null($events['events'])) {
 					'text' => 'กรุณาระบุรหัสสินค้า'
 				];
 			}
-			elseif ($text == 'แน่ใจ') {
-				$message1 = [
-					'type'=> 'template',
-				  'altText'=> 'this is a confirm template',
-				  'template'=> {
-				      'type'=> 'confirm',
-				      'text'=> 'Are you sure?'];
-				$message2=[
-				      ',actions'=> [
-				          {
-				            'type'=> 'message',
-				            'label'=>'Yes',
-				            'text'=> 'yes'
-				          },
-				          {
-				            'type'=> 'message',
-				            'label'=> 'No',
-				            'text'=> 'no'
-				          }
-				      ]
-						];
-					$messages=[$message1+$message2];
-				  }
-			}
+			/*elseif ($text == 'M011-HR2810' || $text == 'M011') {
+				$messages = [
+					'type' => 'text',
+					'text' => 'กรุณาระบุรหัสสินค้า'
+				];
+			}*/
 			else {
 				$messages = [
 					'type' => 'text',
-					'text' => 'กรุณาตรวจสอบคำสั่ง โง่จริงๆ!!!'
+					'text' => 'กรุณาตรวจสอบคำสั่ง'
 			];
 			}
 
