@@ -46,7 +46,7 @@ if (!is_null($events['events'])) {
 					'text' => 'กรุณาระบุรหัสสินค้า'
 				];
 			}
-			elseif ($text == 'M011-HR2810' || $text == 'M011') {
+			elseif ($text == 'M011-HR2810' || $text == 'M011'||$text == 'm011-hr2810'||$text == 'm011') {
 				$messages = [
 					'type'=> 'image',
 	  			'originalContentUrl'=> 'https://www.ktw.co.th/content/images/thumbs/w_1_0369532_hr-2810-%E0%B8%AA%E0%B9%88%E0%B8%99%E0%B9%82%E0%B8%A3%E0%B8%A3%E0%B8%B5%E0%B9%88.jpeg',
