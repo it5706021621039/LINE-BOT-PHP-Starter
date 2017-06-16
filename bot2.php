@@ -55,10 +55,12 @@ if (!is_null($events['events'])) {
 			elseif ($text=='9500nb'|| $text=='9500NB'||$text == 'M011-9500NB'||$text == 'm011-9500nb') {
 				$messages=[
 					'type'=>'text',
-					'text'=>'เจียร์ไฟฟ้า4" รุ่นใหม่ ฉนวน2ชั้น แบรนด์ MAKITA',
+					'text'=>'เจียร์ไฟฟ้า4" รุ่นใหม่ ฉนวน2ชั้น แบรนด์ MAKITA'
+				];
+				$messages2=[
 					'type'=> 'image',
-	  			'originalContentUrl'=> 'https://www.ktw.co.th/content/images/thumbs/w_1_0369532_hr-2810-%E0%B8%AA%E0%B9%88%E0%B8%99%E0%B9%82%E0%B8%A3%E0%B8%A3%E0%B8%B5%E0%B9%88.jpeg',
-	    		'previewImageUrl'=> 'https://www.ktw.co.th/content/images/thumbs/w_1_0369532_hr-2810-%E0%B8%AA%E0%B9%88%E0%B8%99%E0%B9%82%E0%B8%A3%E0%B8%A3%E0%B8%B5%E0%B9%88.jpeg'
+	  			'originalContentUrl'=> 'https://www.ktw.co.th/content/images/thumbs/w_1_0363963_M011-9500NB_M011-9500NBLIM01.jpeg',
+	    		'previewImageUrl'=> 'https://www.ktw.co.th/content/images/thumbs/w_1_0363963_M011-9500NB_M011-9500NBLIM01.jpeg'
 				];
 			}
 
@@ -75,7 +77,7 @@ if (!is_null($events['events'])) {
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages],
+				'messages' => [$messages,$messages2],
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
