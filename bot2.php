@@ -39,41 +39,26 @@ if (!is_null($events['events'])) {
 					'text' => 'กรุณาระบุประเภทสินค้า'
 			];
 			}
-
 			elseif ($text == 'เช็ค') {
 				$messages = [
 					'type' => 'text',
 					'text' => 'กรุณาระบุรหัสสินค้า'
 				];
 			}
-			elseif ($text == 'แน่ใจ') {
-				$message1 = [
-					'type'=> 'template',
-				  'altText'=> 'this is a confirm template',
-				  'template'=> {
-				      'type'=> 'confirm',
-				      'text'=> 'Are you sure?'];
-				$message2=[
-				      ',actions'=> [
-				          {
-				            'type'=> 'message',
-				            'label'=>'Yes',
-				            'text'=> 'yes'
-				          },
-				          {
-				            'type'=> 'message',
-				            'label'=> 'No',
-				            'text'=> 'no'
-				          }
-				      ]
-						];
-					$messages=[$message1+$message2];
-				  }
+			elseif ($text == 'M011-HR2810' || $text == 'M011'||$text == 'm011-hr2810'||$text == 'm011') {
+				$messages = [
+					'type'=> 'image',
+	  			'originalContentUrl'=> 'https://www.ktw.co.th/content/images/thumbs/w_1_0369532_hr-2810-%E0%B8%AA%E0%B9%88%E0%B8%99%E0%B9%82%E0%B8%A3%E0%B8%A3%E0%B8%B5%E0%B9%88.jpeg',
+	    		'previewImageUrl'=> 'https://www.ktw.co.th/content/images/thumbs/w_1_0369532_hr-2810-%E0%B8%AA%E0%B9%88%E0%B8%99%E0%B9%82%E0%B8%A3%E0%B8%A3%E0%B8%B5%E0%B9%88.jpeg'
+				];
+			}
+			elseif ($text == 'รูป') {
+				$messages = array('type:template','template : {type:confirm ,text:Are you sure?,actions:[{type:message,label:Yes,text:yes},{type:message,label:No,text:no}]} ' );
 			}
 			else {
 				$messages = [
 					'type' => 'text',
-					'text' => 'กรุณาตรวจสอบคำสั่ง โง่จริงๆ!!!'
+					'text' => 'กรุณาตรวจสอบคำสั่ง'
 			];
 			}
 
