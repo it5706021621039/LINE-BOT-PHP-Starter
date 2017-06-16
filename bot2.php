@@ -39,7 +39,6 @@ if (!is_null($events['events'])) {
 					'text' => 'กรุณาระบุประเภทสินค้า'
 			];
 			}
-
 			elseif ($text == 'เช็ค') {
 				$messages = [
 					'type' => 'text',
@@ -52,6 +51,9 @@ if (!is_null($events['events'])) {
 	  			'originalContentUrl'=> 'https://www.ktw.co.th/content/images/thumbs/w_1_0369532_hr-2810-%E0%B8%AA%E0%B9%88%E0%B8%99%E0%B9%82%E0%B8%A3%E0%B8%A3%E0%B8%B5%E0%B9%88.jpeg',
 	    		'previewImageUrl'=> 'https://www.ktw.co.th/content/images/thumbs/w_1_0369532_hr-2810-%E0%B8%AA%E0%B9%88%E0%B8%99%E0%B9%82%E0%B8%A3%E0%B8%A3%E0%B8%B5%E0%B9%88.jpeg'
 				];
+			}
+			elseif ($text == 'รูป') {
+				$messages = array('type:template','template : {type:confirm ,text:Are you sure?,actions:[{type:message,label:Yes,text:yes},{type:message,label:No,text:no}]} ' );
 			}
 			else {
 				$messages = [
