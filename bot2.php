@@ -63,7 +63,8 @@ if (!is_null($events['events'])) {
 ราคา
 List Price : 5,190
 Dealer Promotion : 2,671.20
-ราคาปลีกแนะนำ : 3,290'
+ราคาปลีกแนะนำ : 3,290
+สั่งซื้อ https://www.ktw.co.th/9500nb-%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C%E0%B9%84%E0%B8%9F%E0%B8%9F%E0%B9%89%E0%B8%B24%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88-%E0%B8%89%E0%B8%99%E0%B8%A7%E0%B8%992%E0%B8%8A%E0%B8%B1%E0%B9%89%E0%B8%99'
 				];
 				$messages2=[
 					'type'=> 'image',
